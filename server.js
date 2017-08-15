@@ -52,5 +52,5 @@ app.get('/submit-name:name', function (req, res) {
   var name;
   names.push(name);
   // JSON = Javascript Object Notation
-  res.send(JSON.stringfy(names));
+  res.send(JSON.stringify(names));
 });
