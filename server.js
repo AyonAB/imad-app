@@ -48,8 +48,8 @@ app.listen(port, function () {
 });
 
 var names = [];
-app.get('/submit-name/:name', function (req, res) {
-  var name = req.params.name;
+app.get('/submit-name', function (req, res) {
+  var name = req.query.name;
   names.push(name);
   // JSON = Javascript Object Notation
   res.send(JSON.stringify(names));
