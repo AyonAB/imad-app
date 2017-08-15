@@ -23,6 +23,8 @@ button.onclick = function (){
         }
     
     };
+    // Make a request
+    
     request.open('GET','http://ayantorres.imad.hasura-app.io/counter',true);
     request.send(null);
 };
