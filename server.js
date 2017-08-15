@@ -46,3 +46,11 @@ var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+var names = [];
+app.get('/submit-name:name', function (req, res) {
+  var name;
+  names.push(name);
+  // JSON = Javascript Object Notation
+  res.send(JSON.stringfy(names));
+});
