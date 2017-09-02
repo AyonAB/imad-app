@@ -8,7 +8,7 @@ var config = {
     database: 'ayantorres',
     host: 'db.imad.hasura-app.io',
     port: '5432',
-    password: process.ev.DB_PASSWORD
+    //password: process.ev.DB_PASSWORD
 };
 
 var app = express();
